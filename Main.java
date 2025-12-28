@@ -47,7 +47,10 @@ public class Main {
         }
 
         else if (task == 2 && subtask == 1) {
-
+            Cat barsik = new Cat("Barsik");
+            CountingCatWrapper barsikWrapper = new CountingCatWrapper(barsik);
+            MeowUtils.makeAllMeow(Arrays.asList(barsikWrapper));
+            System.out.println("Barsik meowed " + barsikWrapper.getMeowCount() + " time(s).");
         }
 
         else if (task == 3 && subtask == 4) {
